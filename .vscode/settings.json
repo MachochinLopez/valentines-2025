@@ -1,0 +1,120 @@
+{
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.vs": true,
+    "**/.gitmodules": true,
+    "**/.vsconfig": true,
+    "**/*.booproj": true,
+    "**/*.pidb": true,
+    "**/*.suo": true,
+    "**/*.user": true,
+    "**/*.userprefs": true,
+    "**/*.unityproj": true,
+    "**/*.dll": true,
+    "**/*.exe": true,
+    "**/*.pdf": true,
+    "**/*.mid": true,
+    "**/*.midi": true,
+    "**/*.wav": true,
+    "**/*.gif": true,
+    "**/*.ico": true,
+    "**/*.jpg": true,
+    "**/*.jpeg": true,
+    "**/*.png": true,
+    "**/*.psd": true,
+    "**/*.tga": true,
+    "**/*.tif": true,
+    "**/*.tiff": true,
+    "**/*.3ds": true,
+    "**/*.3DS": true,
+    "**/*.fbx": true,
+    "**/*.FBX": true,
+    "**/*.lxo": true,
+    "**/*.LXO": true,
+    "**/*.ma": true,
+    "**/*.MA": true,
+    "**/*.obj": true,
+    "**/*.OBJ": true,
+    "**/*.asset": true,
+    "**/*.cubemap": true,
+    "**/*.flare": true,
+    "**/*.mat": true,
+    "**/*.meta": true,
+    "**/*.prefab": true,
+    "**/*.unity": true,
+    "build/": true,
+    "Build/": true,
+    "Library/": true,
+    "library/": true,
+    "obj/": true,
+    "Obj/": true,
+    "Logs/": true,
+    "logs/": true,
+    "ProjectSettings/": true,
+    "UserSettings/": true,
+    "temp/": true,
+    "Temp/": true
+  },
+  "dotnet.defaultSolution": "Happy Valentines!.sln",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": ["entity.name.class", "entity.name.type"],
+        "settings": {
+          "foreground": "#56B6C2" // Color para tipos de datos como int, float, string
+        }
+      },
+      {
+        "scope": ["entity.name.function", "meta.method.declaration"],
+        "settings": {
+          "foreground": "#61AFEF", // Color para métodos
+          "fontStyle": "bold" // Hacer los métodos en negrita
+        }
+      },
+      {
+        "scope": ["comment"],
+        "settings": {
+          "foreground": "#98C379", // Color para comentarios de bloque
+          "fontStyle": "italic" // Hacer los comentarios en cursiva
+        }
+      },
+      {
+        "scope": [
+          "comment.documentation",
+          "comment.block.documentation",
+          "comment.line"
+        ],
+        "settings": {
+          "foreground": "#5e8543", // Color para comentarios de documentación
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": ["keyword.control", "storage.type"],
+        "settings": {
+          "foreground": "#C678DD" // Color para palabras clave como private, public
+        }
+      },
+      {
+        "scope": ["entity.name.type", "storage.type"],
+        "settings": {
+          "foreground": "#56B6C2" // Color para tipos de datos como int, float, string
+        }
+      },
+      {
+        "scope": ["variable.language", "variable.other"],
+        "settings": {
+          "foreground": "#D19A66" // Color para variables como i, j, k
+        }
+      },
+      {
+        "scope": ["constant.language", "constant.numeric"],
+        "settings": {
+          "foreground": "#D19A66" // Color para constantes numéricas
+        }
+      }
+    ]
+  },
+  "[csharp]": { "editor.defaultFormatter": "csharpier.csharpier-vscode" }
+}
