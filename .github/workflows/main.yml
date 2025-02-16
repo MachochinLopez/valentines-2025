@@ -34,9 +34,9 @@ jobs:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
           UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+          UNITY_VERSION: ${{ secrets.UNITY_VERSION }}
         with:
           targetPlatform: WebGL
-          UNITY_VERSION: ${{ secrets.UNITY_VERSION }}
 
       # Build
       - name: Build project
@@ -45,9 +45,9 @@ jobs:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
           UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+          UNITY_VERSION: ${{ secrets.UNITY_VERSION }}
         with:
           targetPlatform: WebGL
-          UNITY_VERSION: ${{ secrets.UNITY_VERSION }}
 
       # Output
       - uses: actions/upload-artifact@v4
