@@ -27,15 +27,6 @@ jobs:
           restore-keys: |
             Library-
 
-      # Add Unity license activation step
-      - name: Activate Unity
-        uses: game-ci/unity-activate@v2
-        env:
-          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
-          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
-          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
-          UNITY_VERSION: ${{ secrets.UNITY_VERSION }}
-
       # Build
       - name: Build project
         uses: game-ci/unity-builder@v4
@@ -43,9 +34,9 @@ jobs:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
           UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
-          UNITY_VERSION: ${{ secrets.UNITY_VERSION }}
         with:
           targetPlatform: WebGL
+          unityVersion: ${{ secrets.UNITY_VERSION }}
 
       # Output
       - uses: actions/upload-artifact@v4
